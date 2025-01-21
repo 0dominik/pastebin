@@ -76,7 +76,4 @@ docker-compose up --build
 - `MONGO_URI`: MongoDB connection string (default: `mongodb://mongodb:27017/`).
 - `DEBUG`: Enables/disables Flask debug mode.
 
-## Author
-
-Created by **0dominik**.
 
