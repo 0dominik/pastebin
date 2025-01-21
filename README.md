@@ -5,11 +5,8 @@ This project is a containerized Pastebin-like application built using **Flask**,
 #### **Screenshots**
 1. **Homepage**:
    ![Homepage Screenshot](https://files.wasted.dev/ryv7h5)
-   - Shows the form for creating a new paste.
 2. **View Paste Page**:
    ![View Paste Screenshot](https://files.wasted.dev/7pagqu)
-   - Displays the content of a paste with its unique URL.
-
 
 ## Features
 
