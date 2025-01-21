@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ paste.title }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>{{ paste.title }}</h1>
+        <div class="paste-content">
+            <div class="paste-info">
+                <p>Created on: {{ paste.date }}</p>
+                <p>Author: {{ paste.author if paste.author else 'Anonymous' }}</p>
+            </div>
+            <pre>{{ paste.content }}</pre>
+        </div>
+        <a href="/" class="new-paste-link">Create a new paste</a>
+    </div>
+</body>
+</html>

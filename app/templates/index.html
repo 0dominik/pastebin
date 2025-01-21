@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Paste</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <h1>Create a New Paste</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="author" placeholder="Your name">
+            <textarea name="content" placeholder="Your content..." required></textarea>
+            <button type="submit" class="publish-btn">PUBLISH</button>
+        </form>
+    </div>
+</body>
+</html>
