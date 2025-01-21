@@ -46,8 +46,8 @@ PROJECT
 
 ### Clone the Repository
 ```bash
-git clone <repository-url>
-cd <repository-directory>
+git clone https://github.com/0dominik/pastebin
+cd pastebin
 ```
 
 ### Build and Run the Application
