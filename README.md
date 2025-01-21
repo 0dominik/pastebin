@@ -66,54 +66,10 @@ docker-compose up --build
    - Use the unique link provided after creating a paste.
    - Example: `http://localhost:5000/your-paste-id`.
 
-## Sharing the Docker Image
-
-The Docker image is available on Docker Hub:
-```bash
-docker pull 0dominik/pastebin-app:latest
-```
-
-To run the application using this image:
-```bash
-docker-compose up
-```
-
 ## Environment Variables
 
 - `MONGO_URI`: MongoDB connection string (default: `mongodb://mongodb:27017/`).
 - `DEBUG`: Enables/disables Flask debug mode.
-
-## Troubleshooting
-
-### MongoDB Issues
-
-1. Ensure the `mongodb` container is running:
-   ```bash
-   docker ps
-   ```
-
-2. Clean persistent volumes if necessary:
-   ```bash
-   docker-compose down -v
-   docker-compose up --build
-   ```
-
-### Debugging Logs
-
-Check container logs for errors:
-```bash
-docker-compose logs
-```
-
-## Future Improvements
-
-- Add authentication for paste management.
-- Enhance the UI for better usability.
-- Provide an API for programmatic access to pastes.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Author
 
