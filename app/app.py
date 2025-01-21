@@ -25,7 +25,7 @@ def index():
         title = request.form.get('title', 'Untitled')
         content = request.form.get('content')
         author = request.form.get('author', 'Anonymous')
-        date = datetime.now().strftime("A%d-%m-%Y")
+        date = datetime.now().strftime("%d-%m-%Y")
         
         # Create a base unique ID for the paste
         base_unique_id = f"{title.lower().replace(' ', '-')}-{date}"
