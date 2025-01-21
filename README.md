@@ -2,6 +2,15 @@
 
 This project is a containerized Pastebin-like application built using **Flask**, **MongoDB**, and **Docker**. It allows users to create, view, and share text entries via unique links.
 
+#### **Screenshots**
+1. **Homepage**:
+   ![Homepage Screenshot](https://files.wasted.dev/ryv7h5)
+   - Shows the form for creating a new paste.
+2. **View Paste Page**:
+   ![View Paste Screenshot](https://files.wasted.dev/7pagqu)
+   - Displays the content of a paste with its unique URL.
+
+
 ## Features
 
 - Create and view text entries with unique, shareable links.
