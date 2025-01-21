@@ -11,8 +11,7 @@ This project is a containerized Pastebin-like application built using **Flask**,
 
 ## Prerequisites
 
-- Docker installed ([Get Docker](https://docs.docker.com/get-docker/))
-- Docker Compose installed ([Install Docker Compose](https://docs.docker.com/compose/install/))
+- Docker installed ([Get Docker](https://docs.docker.com/desktop/setup/install/windows-install/))
 
 ## Project Structure
 
