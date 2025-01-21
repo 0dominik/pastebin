@@ -7,7 +7,8 @@ services:
       - MONGO_URI=mongodb://mongodb:27017/
       - DEBUG=TRUE
     depends_on:
-      - mongodb
+      mongodb:
+        condition: service_healthy
     restart: always
     logging:
       driver: "json-file"
@@ -19,6 +20,12 @@ services:
     image: mongo:latest
     volumes:
       - mongodb_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
 
 volumes:
   mongodb_data:
